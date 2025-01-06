@@ -1,6 +1,6 @@
 <template lang="pug">
 div(
-  class="bg-cyan-700 aspect-square"
+  class="bg-cyan-700"
 )
   swiper-container(
     ref="containerRef",
