@@ -1,6 +1,6 @@
 <template lang="pug">
 div(
-  class="bg-cyan-700 h-full"
+  class="bg-cyan-700 aspect-square"
 )
   swiper-container(
     ref="containerRef",
@@ -14,6 +14,12 @@ div(
 </template>
 
 <script setup>
+const containerRef = ref(null)
+const swiper = useSwiper(containerRef, {
+  effect: 'creative',
+  navigation: true,
+})
+
 const pageList = [
   {
     content: '123',
