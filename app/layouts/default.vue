@@ -27,6 +27,7 @@ const containerRef = ref(null)
 const swiper = useSwiper(containerRef, {
   effect: 'creative',
   pagination: true,
+  navigation: true,
   'pagination-type': 'fraction'
 })
 
